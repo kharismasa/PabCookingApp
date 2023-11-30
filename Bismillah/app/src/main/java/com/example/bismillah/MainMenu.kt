@@ -7,16 +7,16 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import com.example.bismillah.databinding.ActivityMainBinding
+import com.example.bismillah.databinding.ActivityMainMenuBinding
 
-class MainActivity : AppCompatActivity() {
+class MainMenu : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityMainMenuBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityMainMenuBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         // Hide the action bar

@@ -18,6 +18,9 @@ class HalamanPreferensiAlergi : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_halaman_preferensi_alergi)
 
+        // Hide the action bar
+        supportActionBar?.hide()
+
         // Inisialisasi database Firebase
         databaseReference = FirebaseDatabase.getInstance().reference
 
@@ -39,11 +42,11 @@ class HalamanPreferensiAlergi : AppCompatActivity() {
         cardDiary.setOnClickListener {
             if (!selectedPreferences.contains("Diary")) {
                 savePreferenceToFirebase("Diary", userId)
-                cardDiary.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorAccent))
+                cardDiary.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorSelected))
                 selectedPreferences.add("Diary")
             } else {
                 // Batalkan pilihan
-                databaseReference.child("users").child(userId).child("preferences").child("Diary").removeValue()
+                databaseReference.child("users").child(userId).child("preferensi alergi").child("Diary").removeValue()
                 cardDiary.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorUnselected))
                 selectedPreferences.remove("Diary")
             }
@@ -51,11 +54,11 @@ class HalamanPreferensiAlergi : AppCompatActivity() {
         cardEgg.setOnClickListener {
             if (!selectedPreferences.contains("Egg")) {
                 savePreferenceToFirebase("Egg", userId)
-                cardEgg.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorAccent))
+                cardEgg.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorSelected))
                 selectedPreferences.add("Egg")
             } else {
                 // Batalkan pilihan
-                databaseReference.child("users").child(userId).child("preferences").child("Egg").removeValue()
+                databaseReference.child("users").child(userId).child("preferensi alergi").child("Egg").removeValue()
                 cardEgg.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorUnselected))
                 selectedPreferences.remove("Egg")
             }
@@ -63,11 +66,11 @@ class HalamanPreferensiAlergi : AppCompatActivity() {
         cardGluten.setOnClickListener {
             if (!selectedPreferences.contains("Gluten")) {
                 savePreferenceToFirebase("Gluten", userId)
-                cardGluten.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorAccent))
+                cardGluten.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorSelected))
                 selectedPreferences.add("Gluten")
             } else {
                 // Batalkan pilihan
-                databaseReference.child("users").child(userId).child("preferences").child("Gluten").removeValue()
+                databaseReference.child("users").child(userId).child("preferensi alergi").child("Gluten").removeValue()
                 cardGluten.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorUnselected))
                 selectedPreferences.remove("Gluten")
             }
@@ -75,11 +78,11 @@ class HalamanPreferensiAlergi : AppCompatActivity() {
         cardPeanut.setOnClickListener {
             if (!selectedPreferences.contains("Peanut")) {
                 savePreferenceToFirebase("Peanut", userId)
-                cardPeanut.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorAccent))
+                cardPeanut.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorSelected))
                 selectedPreferences.add("Peanut")
             } else {
                 // Batalkan pilihan
-                databaseReference.child("users").child(userId).child("preferences").child("Peanut").removeValue()
+                databaseReference.child("users").child(userId).child("preferensi alergi").child("Peanut").removeValue()
                 cardPeanut.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorUnselected))
                 selectedPreferences.remove("Peanut")
             }
@@ -87,11 +90,11 @@ class HalamanPreferensiAlergi : AppCompatActivity() {
         cardSesame.setOnClickListener {
             if (!selectedPreferences.contains("Sesame")) {
                 savePreferenceToFirebase("Sesame", userId)
-                cardSesame.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorAccent))
+                cardSesame.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorSelected))
                 selectedPreferences.add("Sesame")
             } else {
                 // Batalkan pilihan
-                databaseReference.child("users").child(userId).child("preferences").child("Sesame").removeValue()
+                databaseReference.child("users").child(userId).child("preferensi alergi").child("Sesame").removeValue()
                 cardSesame.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorUnselected))
                 selectedPreferences.remove("Sesame")
             }
@@ -99,11 +102,11 @@ class HalamanPreferensiAlergi : AppCompatActivity() {
         cardSoy.setOnClickListener {
             if (!selectedPreferences.contains("Soy")) {
                 savePreferenceToFirebase("Soy", userId)
-                cardSoy.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorAccent))
+                cardSoy.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorSelected))
                 selectedPreferences.add("Soy")
             } else {
                 // Batalkan pilihan
-                databaseReference.child("users").child(userId).child("preferences").child("Soy").removeValue()
+                databaseReference.child("users").child(userId).child("preferensi alergi").child("Soy").removeValue()
                 cardSoy.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorUnselected))
                 selectedPreferences.remove("Soy")
             }
@@ -111,11 +114,11 @@ class HalamanPreferensiAlergi : AppCompatActivity() {
         cardSulfite.setOnClickListener {
             if (!selectedPreferences.contains("Sulfite")) {
                 savePreferenceToFirebase("Sulfite", userId)
-                cardSulfite.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorAccent))
+                cardSulfite.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorSelected))
                 selectedPreferences.add("Sulfite")
             } else {
                 // Batalkan pilihan
-                databaseReference.child("users").child(userId).child("preferences").child("Sulfite").removeValue()
+                databaseReference.child("users").child(userId).child("preferensi alergi").child("Sulfite").removeValue()
                 cardSulfite.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorUnselected))
                 selectedPreferences.remove("Sulfite")
             }
@@ -123,11 +126,11 @@ class HalamanPreferensiAlergi : AppCompatActivity() {
         cardTreenut.setOnClickListener {
             if (!selectedPreferences.contains("Treenut")) {
                 savePreferenceToFirebase("Treenut", userId)
-                cardTreenut.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorAccent))
+                cardTreenut.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorSelected))
                 selectedPreferences.add("Treenut")
             } else {
                 // Batalkan pilihan
-                databaseReference.child("users").child(userId).child("preferences").child("Treenut").removeValue()
+                databaseReference.child("users").child(userId).child("preferensi alergi").child("Treenut").removeValue()
                 cardTreenut.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorUnselected))
                 selectedPreferences.remove("Treenut")
             }
@@ -135,11 +138,11 @@ class HalamanPreferensiAlergi : AppCompatActivity() {
         cardWheat.setOnClickListener {
             if (!selectedPreferences.contains("Wheat")) {
                 savePreferenceToFirebase("Wheat", userId)
-                cardWheat.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorAccent))
+                cardWheat.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorSelected))
                 selectedPreferences.add("Wheat")
             } else {
                 // Batalkan pilihan
-                databaseReference.child("users").child(userId).child("preferences").child("Wheat").removeValue()
+                databaseReference.child("users").child(userId).child("preferensi alergi").child("Wheat").removeValue()
                 cardWheat.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorUnselected))
                 selectedPreferences.remove("Wheat")
             }
@@ -147,11 +150,11 @@ class HalamanPreferensiAlergi : AppCompatActivity() {
         cardSeafood.setOnClickListener {
             if (!selectedPreferences.contains("Seafood")) {
                 savePreferenceToFirebase("Seafood", userId)
-                cardSeafood.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorAccent))
+                cardSeafood.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorSelected))
                 selectedPreferences.add("Seafood")
             } else {
                 // Batalkan pilihan
-                databaseReference.child("users").child(userId).child("preferences").child("Seafood").removeValue()
+                databaseReference.child("users").child(userId).child("preferensi alergi").child("Seafood").removeValue()
                 cardSeafood.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorUnselected))
                 selectedPreferences.remove("Seafood")
             }

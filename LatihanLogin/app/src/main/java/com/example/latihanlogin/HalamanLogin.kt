@@ -21,6 +21,9 @@ class HalamanLogin : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+        // Hide the action bar
+        supportActionBar?.hide()
+
         inputUsername = findViewById(R.id.editTextUsername)
         inputPassword = findViewById(R.id.editTextPassword)
 

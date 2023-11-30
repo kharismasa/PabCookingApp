@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">LatihanLogin</string>
+    <string name="app_name">CookItUp</string>
+    <string name="title_home">Home</string>
+    <string name="title_search">Search</string>
+    <string name="title_list">List</string>
+    <string name="title_profile">Profile</string>
 </resources>

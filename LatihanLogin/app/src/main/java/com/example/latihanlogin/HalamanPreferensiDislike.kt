@@ -17,6 +17,9 @@ class HalamanPreferensiDislike : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_halaman_preferensi_dislike)
 
+        // Hide the action bar
+        supportActionBar?.hide()
+
         // Inisialisasi database Firebase
         databaseReference = FirebaseDatabase.getInstance().reference
 
@@ -38,7 +41,7 @@ class HalamanPreferensiDislike : AppCompatActivity() {
         cardAlcohol.setOnClickListener {
             if (!selectedDislikes.contains("Alcohol")) {
                 saveDislikeToFirebase("Alcohol", userId)
-                cardAlcohol.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorAccent))
+                cardAlcohol.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorSelected))
                 selectedDislikes.add("Alcohol")
             } else {
                 // Batalkan pilihan
@@ -50,7 +53,7 @@ class HalamanPreferensiDislike : AppCompatActivity() {
         cardAvocado.setOnClickListener {
             if (!selectedDislikes.contains("Avocado")) {
                 saveDislikeToFirebase("Avocado", userId)
-                cardAvocado.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorAccent))
+                cardAvocado.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorSelected))
                 selectedDislikes.add("Avocado")
             } else {
                 // Batalkan pilihan
@@ -63,7 +66,7 @@ class HalamanPreferensiDislike : AppCompatActivity() {
         cardBeef.setOnClickListener {
             if (!selectedDislikes.contains("Beef")) {
                 saveDislikeToFirebase("Beef", userId)
-                cardBeef.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorAccent))
+                cardBeef.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorSelected))
                 selectedDislikes.add("Beef")
             } else {
                 // Batalkan pilihan
@@ -75,7 +78,7 @@ class HalamanPreferensiDislike : AppCompatActivity() {
         cardFish.setOnClickListener {
             if (!selectedDislikes.contains("Fish")) {
                 saveDislikeToFirebase("Fish", userId)
-                cardFish.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorAccent))
+                cardFish.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorSelected))
                 selectedDislikes.add("Fish")
             } else {
                 // Batalkan pilihan
@@ -87,7 +90,7 @@ class HalamanPreferensiDislike : AppCompatActivity() {
         cardMayonnaise.setOnClickListener {
             if (!selectedDislikes.contains("Mayonnaise")) {
                 saveDislikeToFirebase("Mayonnaise", userId)
-                cardMayonnaise.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorAccent))
+                cardMayonnaise.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorSelected))
                 selectedDislikes.add("Mayonnaise")
             } else {
                 // Batalkan pilihan
@@ -100,7 +103,7 @@ class HalamanPreferensiDislike : AppCompatActivity() {
         cardOnion.setOnClickListener {
             if (!selectedDislikes.contains("Onion")) {
                 saveDislikeToFirebase("Onion", userId)
-                cardOnion.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorAccent))
+                cardOnion.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorSelected))
                 selectedDislikes.add("Onion")
             } else {
                 // Batalkan pilihan
@@ -113,7 +116,7 @@ class HalamanPreferensiDislike : AppCompatActivity() {
         cardPork.setOnClickListener {
             if (!selectedDislikes.contains("Pork")) {
                 saveDislikeToFirebase("Pork", userId)
-                cardPork.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorAccent))
+                cardPork.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorSelected))
                 selectedDislikes.add("Pork")
             } else {
                 // Batalkan pilihan
@@ -126,7 +129,7 @@ class HalamanPreferensiDislike : AppCompatActivity() {
         cardPotato.setOnClickListener {
             if (!selectedDislikes.contains("Potato")) {
                 saveDislikeToFirebase("Potato", userId)
-                cardPotato.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorAccent))
+                cardPotato.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorSelected))
                 selectedDislikes.add("Potato")
             } else {
                 // Batalkan pilihan
@@ -139,7 +142,7 @@ class HalamanPreferensiDislike : AppCompatActivity() {
         cardSeafood.setOnClickListener {
             if (!selectedDislikes.contains("Seafood")) {
                 saveDislikeToFirebase("Seafood", userId)
-                cardSeafood.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorAccent))
+                cardSeafood.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorSelected))
                 selectedDislikes.add("Seafood")
             } else {
                 // Batalkan pilihan
@@ -152,7 +155,7 @@ class HalamanPreferensiDislike : AppCompatActivity() {
         cardShrimp.setOnClickListener {
             if (!selectedDislikes.contains("Shrimp")) {
                 saveDislikeToFirebase("Shrimp", userId)
-                cardShrimp.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorAccent))
+                cardShrimp.setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorSelected))
                 selectedDislikes.add("Shrimp")
             } else {
                 // Batalkan pilihan

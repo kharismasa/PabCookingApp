@@ -405,7 +405,8 @@
             android:backgroundTint="@color/button_selector2"
             android:fontFamily="@font/open_sans_bold"
             android:text="Next"
-            android:textSize="12dp" />
+            android:textSize="12dp"
+            android:textColor="@color/white"/>
 
     </LinearLayout>
 

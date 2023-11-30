@@ -13,6 +13,9 @@ class HalamanAwal : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_halaman_awal)
 
+        // Hide the action bar
+        supportActionBar?.hide()
+
         timer = Timer()
         timer?.schedule(object : TimerTask() {
             override fun run() {
