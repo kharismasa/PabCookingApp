@@ -6,11 +6,16 @@ import android.view.View
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 
 class HalamanLogin : AppCompatActivity() {
 
     private lateinit var inputUsername: EditText
     private lateinit var inputPassword: EditText
+    private lateinit var firebaseAuth: FirebaseAuth
+    private lateinit var databaseReference: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,6 +23,9 @@ class HalamanLogin : AppCompatActivity() {
 
         inputUsername = findViewById(R.id.editTextUsername)
         inputPassword = findViewById(R.id.editTextPassword)
+
+        firebaseAuth = FirebaseAuth.getInstance()
+        databaseReference = FirebaseDatabase.getInstance().reference
     }
 
     fun fLogin(view: View) {
@@ -29,11 +37,14 @@ class HalamanLogin : AppCompatActivity() {
 
         if (isLoginSuccessful) {
             // Jika login berhasil, buat Intent dan kirim data ke aktivitas selanjutnya
-            val intKeHalamanWelcome = Intent(this, HalamanWelcome::class.java)
-            intKeHalamanWelcome.apply {
+            val intKeHalamanPreverensiAlergi = Intent(this, HalamanPreferensiAlergi::class.java)
+            intKeHalamanPreverensiAlergi.apply {
                 putExtra("username", iUsername)
             }
-            startActivity(intKeHalamanWelcome)
+            startActivity(intKeHalamanPreverensiAlergi)
+
+            // Simpan data ke Firebase Realtime Database
+            saveDataToFirebase(iUsername, iPassword)
         } else {
             // Jika login gagal, tampilkan pesan toast
             Toast.makeText(this, "Login Gagal. Periksa kembali username dan password Anda.", Toast.LENGTH_SHORT).show()
@@ -42,9 +53,22 @@ class HalamanLogin : AppCompatActivity() {
 
     // Metode simulasi otentikasi
     private fun performLogin(username: String, password: String): Boolean {
-        // Ganti dengan logika otentikasi sesuai kebutuhan
-        // Misalnya, validasi username dan password dengan data yang sudah disimpan
-        // di server atau penyimpanan lokal.
-        return  password == "kelasC"
+        // Ganti ini dengan otentikasi Firebase jika Anda menggunakannya
+        return username == "Kharisma" && password == "kelasC"
+    }
+
+    private fun saveDataToFirebase(username: String, password: String) {
+        // Mendapatkan UID pengguna yang sudah login
+        val userId = firebaseAuth.currentUser?.uid
+
+        // Pastikan userId tidak null sebelum menyimpan data
+        userId?.let {
+            // Jalur referensi di Firebase Realtime Database
+            val userReference = databaseReference.child("users").child(userId)
+
+            // Simpan data ke Firebase
+            userReference.child("username").setValue(username)
+            userReference.child("password").setValue(password)
+        }
     }
 }

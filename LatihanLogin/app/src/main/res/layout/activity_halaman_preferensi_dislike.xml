@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     android:layout_margin="0dp"
     android:background="@drawable/bgkecil"
-    tools:context=".HalamanPreferensiAlergi">
+    tools:context=".HalamanPreferensiDislike">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
             android:layout_width="210dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/open_sans_bold"
-            android:text="Do you have food allergies?"
+            android:text="Do you have any dislike foods?"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="24sp"
@@ -42,13 +42,12 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:id="@+id/layoutDiary"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/cardDiary"
+                        android:id="@+id/cardAlcohol"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
@@ -59,17 +58,17 @@
                         app:contentPadding="20dp">
 
                         <ImageView
-                            android:id="@+id/imDiary"
+                            android:id="@+id/imAlcohol"
                             android:layout_width="70dp"
                             android:layout_height="70dp"
-                            android:background="@drawable/dairy" />
+                            android:background="@drawable/alcohol" />
                     </androidx.cardview.widget.CardView>
 
                     <TextView
-                        android:id="@+id/tDiary"
+                        android:id="@+id/tAlcohol"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="DIARY"
+                        android:text="ALCOHOL"
                         android:fontFamily="@font/open_sans_bold"
                         android:textSize="12dp"
                         android:textAlignment="center"/>
@@ -77,14 +76,13 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/layoutEgg"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:layout_marginStart="10dp">
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/cardEgg"
+                        android:id="@+id/cardAvocado"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
@@ -94,17 +92,17 @@
                         app:cardElevation="5dp"
                         app:contentPadding="20dp">
                         <ImageView
-                            android:id="@+id/imEgg"
+                            android:id="@+id/imAvocado"
                             android:layout_width="70dp"
                             android:layout_height="70dp"
-                            android:background="@drawable/egg"/>
+                            android:background="@drawable/avocado"/>
                     </androidx.cardview.widget.CardView>
 
                     <TextView
-                        android:id="@+id/tEgg"
+                        android:id="@+id/tAvocado"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="EGG"
+                        android:text="AVOCADO"
                         android:fontFamily="@font/open_sans_bold"
                         android:textSize="12dp"
                         android:textAlignment="center"/>
@@ -112,14 +110,13 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/layoutGluten"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:layout_marginStart="10dp">
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/cardGluten"
+                        android:id="@+id/cardBeef"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
@@ -129,17 +126,17 @@
                         app:cardElevation="5dp"
                         app:contentPadding="20dp">
                         <ImageView
-                            android:id="@+id/imGluten"
+                            android:id="@+id/imBeef"
                             android:layout_width="70dp"
                             android:layout_height="70dp"
-                            android:background="@drawable/gluten"/>
+                            android:background="@drawable/beef"/>
                     </androidx.cardview.widget.CardView>
 
                     <TextView
-                        android:id="@+id/tGluten"
+                        android:id="@+id/tBeef"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="GLUTEN"
+                        android:text="BEEF"
                         android:fontFamily="@font/open_sans_bold"
                         android:textSize="12dp"
                         android:textAlignment="center"/>
@@ -147,14 +144,13 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/layoutPeanut"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:layout_marginStart="10dp">
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/cardPeanut"
+                        android:id="@+id/cardFish"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
@@ -164,17 +160,17 @@
                         app:cardElevation="5dp"
                         app:contentPadding="20dp">
                         <ImageView
-                            android:id="@+id/imPeanut"
+                            android:id="@+id/imFish"
                             android:layout_width="70dp"
                             android:layout_height="70dp"
-                            android:background="@drawable/peanut"/>
+                            android:background="@drawable/fish"/>
                     </androidx.cardview.widget.CardView>
 
                     <TextView
-                        android:id="@+id/tPeanut"
+                        android:id="@+id/tFish"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="PEANUT"
+                        android:text="FISH"
                         android:fontFamily="@font/open_sans_bold"
                         android:textSize="12dp"
                         android:textAlignment="center"/>
@@ -182,7 +178,142 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/layoutSeafood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardMayonnaise"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@color/button_selector"
+                        app:cardBackgroundColor="#F1F1F1"
+                        app:cardCornerRadius="90dp"
+                        app:cardElevation="5dp"
+                        app:contentPadding="20dp">
+                        <ImageView
+                            android:id="@+id/imMayonnaise"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/mayonnaise"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tMayonnaise"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="MAYONNAISE"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:textSize="12dp"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardOnion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@color/button_selector"
+                        app:cardBackgroundColor="#F1F1F1"
+                        app:cardCornerRadius="90dp"
+                        app:cardElevation="5dp"
+                        app:contentPadding="20dp">
+                        <ImageView
+                            android:id="@+id/imOnion"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/onion"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tOnion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ONION"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:textSize="12dp"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardPork"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@color/button_selector"
+                        app:cardBackgroundColor="#F1F1F1"
+                        app:cardCornerRadius="90dp"
+                        app:cardElevation="5dp"
+                        app:contentPadding="20dp">
+                        <ImageView
+                            android:id="@+id/imPork"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/pork"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tPork"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="PORK"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:textSize="12dp"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardPotato"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@color/button_selector"
+                        app:cardBackgroundColor="#F1F1F1"
+                        app:cardCornerRadius="90dp"
+                        app:cardElevation="5dp"
+                        app:contentPadding="20dp">
+                        <ImageView
+                            android:id="@+id/imPotato"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/potato"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tPotato"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="POTATO"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:textSize="12dp"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
@@ -202,7 +333,7 @@
                             android:id="@+id/imSeafood"
                             android:layout_width="70dp"
                             android:layout_height="70dp"
-                            android:background="@drawable/seafood"/>
+                            android:background="@drawable/seafood2"/>
                     </androidx.cardview.widget.CardView>
 
                     <TextView
@@ -217,147 +348,6 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/layoutSesame"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginStart="10dp">
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/cardSesame"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:background="@color/button_selector"
-                        app:cardBackgroundColor="#F1F1F1"
-                        app:cardCornerRadius="90dp"
-                        app:cardElevation="5dp"
-                        app:contentPadding="20dp">
-                        <ImageView
-                            android:id="@+id/imSesame"
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
-                            android:background="@drawable/sesame"/>
-                    </androidx.cardview.widget.CardView>
-
-                    <TextView
-                        android:id="@+id/tSesame"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="SESAME"
-                        android:fontFamily="@font/open_sans_bold"
-                        android:textSize="12dp"
-                        android:textAlignment="center"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/layoutSoy"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginStart="10dp">
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/cardSoy"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:background="@color/button_selector"
-                        app:cardBackgroundColor="#F1F1F1"
-                        app:cardCornerRadius="90dp"
-                        app:cardElevation="5dp"
-                        app:contentPadding="20dp">
-                        <ImageView
-                            android:id="@+id/imSoy"
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
-                            android:background="@drawable/soy"/>
-                    </androidx.cardview.widget.CardView>
-
-                    <TextView
-                        android:id="@+id/tSoy"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="SOY"
-                        android:fontFamily="@font/open_sans_bold"
-                        android:textSize="12dp"
-                        android:textAlignment="center"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/layoutSulfite"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginStart="10dp">
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/cardSulfite"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:background="@color/button_selector"
-                        app:cardBackgroundColor="#F1F1F1"
-                        app:cardCornerRadius="90dp"
-                        app:cardElevation="5dp"
-                        app:contentPadding="20dp">
-                        <ImageView
-                            android:id="@+id/imSulfite"
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
-                            android:background="@drawable/sulfite"/>
-                    </androidx.cardview.widget.CardView>
-
-                    <TextView
-                        android:id="@+id/tSulfite"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="SULFITE"
-                        android:fontFamily="@font/open_sans_bold"
-                        android:textSize="12dp"
-                        android:textAlignment="center"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/layoutTreenut"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginStart="10dp">
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/cardTreenut"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:background="@color/button_selector"
-                        app:cardBackgroundColor="#F1F1F1"
-                        app:cardCornerRadius="90dp"
-                        app:cardElevation="5dp"
-                        app:contentPadding="20dp">
-                        <ImageView
-                            android:id="@+id/imTreenut"
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
-                            android:background="@drawable/treenut"/>
-                    </androidx.cardview.widget.CardView>
-
-                    <TextView
-                        android:id="@+id/tTreenut"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="TREE NUT"
-                        android:fontFamily="@font/open_sans_bold"
-                        android:textSize="12dp"
-                        android:textAlignment="center"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/layoutWheat"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
@@ -365,7 +355,7 @@
                     android:layout_marginEnd="20dp">
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/cardWheat"
+                        android:id="@+id/cardShrimp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
@@ -375,17 +365,17 @@
                         app:cardElevation="5dp"
                         app:contentPadding="20dp">
                         <ImageView
-                            android:id="@+id/imWheat"
+                            android:id="@+id/imShrimp"
                             android:layout_width="70dp"
                             android:layout_height="70dp"
-                            android:background="@drawable/wheat"/>
+                            android:background="@drawable/shrimp"/>
                     </androidx.cardview.widget.CardView>
 
                     <TextView
-                        android:id="@+id/tWheat"
+                        android:id="@+id/tShrimp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="WHEAT"
+                        android:text="SHRIMP"
                         android:fontFamily="@font/open_sans_bold"
                         android:textSize="12dp"
                         android:textAlignment="center"/>
@@ -397,7 +387,7 @@
         </HorizontalScrollView>
 
         <Button
-            android:id="@+id/btnNextDislike"
+            android:id="@+id/btnNextHome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

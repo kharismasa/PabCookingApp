@@ -7,14 +7,30 @@
     tools:context=".HalamanWelcome">
 
     <TextView
-        android:id="@+id/textViewWelcom"
+        android:id="@+id/tvUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="171dp"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="172dp"
-        android:text="Selamat Datang!"
+        android:text="Username"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvListAlergi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ListAlergi"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="154dp" />
+
+    <TextView
+        android:id="@+id/tvListDislike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ListDislike"
+        tools:layout_editor_absoluteX="164dp"
+        tools:layout_editor_absoluteY="228dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

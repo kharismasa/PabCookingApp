@@ -9,7 +9,7 @@ class HalamanWelcome : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_halaman_welcome)
 
-        val textViewWelcome = findViewById<TextView>(R.id.textViewWelcom)
+        val textViewWelcome = findViewById<TextView>(R.id.tvUsername)
 
 
         val intent = intent
