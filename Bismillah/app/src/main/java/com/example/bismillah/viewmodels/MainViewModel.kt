@@ -26,7 +26,7 @@ class MainViewModel @Inject constructor(
 
     var recyclerViewState: Parcelable? = null
 
-    /** ROOM DATABASE */
+    /** ROOM DATABASE LOCAL*/
 
     val readRecipes: LiveData<List<RecipesEntity>> = repository.local.readRecipes().asLiveData()
     val readFavoriteRecipes: LiveData<List<FavoritesEntity>> = repository.local.readFavoriteRecipes().asLiveData()

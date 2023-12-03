@@ -3,7 +3,6 @@ package com.example.bismillah.adapters
 import android.view.*
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.FragmentActivity
-import androidx.navigation.findNavController
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.bismillah.R
@@ -62,18 +61,6 @@ class FavoriteRecipesAdapter(
          * Single Click Listener
          * */
         holder.binding.favoriteRecipesRowLayout.setOnClickListener {
-//            if (multiSelection) {
-//                applySelection(holder, currentRecipe)
-//            } else {
-//                val action =
-//                    FavoriteRecipesFragmentDirections.actionFavoriteRecipesFragm
-//
-//                entToDetailsActivity(
-//                        currentRecipe.result
-//                    )
-//                holder.itemView.findNavController().navigate(action)
-//            }
-
             if (!multiSelection) {
                 multiSelection = true
                 requireActivity.startActionMode(this)
