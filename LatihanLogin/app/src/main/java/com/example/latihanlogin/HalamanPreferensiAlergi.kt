@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
-import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 

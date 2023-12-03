@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Testsekalilagi</string>
+    <string name="default_web_client_id">242425966816-hgmgi7fm1anp1lt2een4c94bl07fc007.apps.googleusercontent.com</string>
+    <string name="get_started_text">Explore culinary\n with our recipe app!</string>
+    <string name="forgot_password_msg">Don\'t worry! it happens. Please enter the email address associated with your account.</string>
+    <string name="on_submit_msg">Check out your mailbox, you will receive an email containing link where you can reset your password</string>
+    <string name="get_started_text2">Explore culinary with our recipe app!\n Easy way to find recipes as easy as\n tapping your finger</string>
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "242425966816",
+    "project_id": "cookitup-7d2b3",
+    "storage_bucket": "cookitup-7d2b3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:242425966816:android:3340a7bfe666ace64a2085",
+        "android_client_info": {
+          "package_name": "com.example.testsekalilagi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIa_YloI4PWp9IO5lOmRiVOcpf3j4EFMM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

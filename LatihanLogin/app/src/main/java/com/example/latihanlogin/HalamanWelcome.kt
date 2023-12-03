@@ -60,11 +60,11 @@ class HalamanWelcome : AppCompatActivity() {
             })
 
         // Button untuk beralih ke halaman menu utama
-        val btnNextMenu = findViewById<Button>(R.id.btnNextMenu)
-        btnNextMenu.setOnClickListener {
-            val intent = Intent(this, MainMenu::class.java)
-            startActivity(intent)
-        }
+//        val btnNextMenu = findViewById<Button>(R.id.btnNextMenu)
+//        btnNextMenu.setOnClickListener {
+//            val intent = Intent(this, MainMenu::class.java)
+//            startActivity(intent)
+//        }
     }
 }
 
