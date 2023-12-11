@@ -114,13 +114,3 @@ dependencies {
     implementation("com.google.firebase:firebase-auth-ktx:22.3.0")
 
 }
-
-
-//single { RecipesRepository(get()) }
-//
-//factory { RecipesViewModelFactory(get()) }
-
-// Allow references to generated code
-//kapt {
-//    correctErrorTypes = true
-//}
