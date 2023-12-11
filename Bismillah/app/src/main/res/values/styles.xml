@@ -52,4 +52,9 @@
         <item name="itemTextColor">@color/bottom_nav_view_item_color</item>
     </style>
 
+    <style name="AwalActivityStyle" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="background">@drawable/bgkecil</item>
+    </style>
+
+
 </resources>

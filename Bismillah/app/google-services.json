@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "402669988486",
+    "firebase_url": "https://simpandatapreferensi-22843-default-rtdb.firebaseio.com",
+    "project_id": "simpandatapreferensi-22843",
+    "storage_bucket": "simpandatapreferensi-22843.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:402669988486:android:6e938d7cf05c6b5653ff07",
+        "android_client_info": {
+          "package_name": "com.example.bismillah"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8QCIBSyD_zg3EaIfJdH3sJpFi5h3qoEU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:402669988486:android:9b2d64dd5ac80f3353ff07",
+        "android_client_info": {
+          "package_name": "com.example.latihanlogin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8QCIBSyD_zg3EaIfJdH3sJpFi5h3qoEU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

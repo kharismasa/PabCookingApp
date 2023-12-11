@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:background="@drawable/bgkecil"
+    tools:context=".preferensi.HalamanPreferensiAlergi">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tPertanyaan"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="Do you have food allergies?"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="20dp"
+            android:contentDescription="Scrollable options">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/layoutDiary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardDiary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@color/button_selector"
+                        app:cardBackgroundColor="#F1F1F1"
+                        app:cardCornerRadius="90dp"
+                        app:cardElevation="5dp"
+                        app:contentPadding="20dp">
+
+                        <ImageView
+                            android:id="@+id/imDiary"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/dairy" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tDiary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="DIARY"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:textSize="12dp"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutEgg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardEgg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@color/button_selector"
+                        app:cardBackgroundColor="#F1F1F1"
+                        app:cardCornerRadius="90dp"
+                        app:cardElevation="5dp"
+                        app:contentPadding="20dp">
+                        <ImageView
+                            android:id="@+id/imEgg"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/egg"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tEgg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="EGG"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:textSize="12dp"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutGluten"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardGluten"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@color/button_selector"
+                        app:cardBackgroundColor="#F1F1F1"
+                        app:cardCornerRadius="90dp"
+                        app:cardElevation="5dp"
+                        app:contentPadding="20dp">
+                        <ImageView
+                            android:id="@+id/imGluten"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/gluten"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tGluten"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GLUTEN"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:textSize="12dp"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutPeanut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardPeanut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@color/button_selector"
+                        app:cardBackgroundColor="#F1F1F1"
+                        app:cardCornerRadius="90dp"
+                        app:cardElevation="5dp"
+                        app:contentPadding="20dp">
+                        <ImageView
+                            android:id="@+id/imPeanut"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/peanut"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tPeanut"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="PEANUT"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:textSize="12dp"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutSeafood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardSeafood"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@color/button_selector"
+                        app:cardBackgroundColor="#F1F1F1"
+                        app:cardCornerRadius="90dp"
+                        app:cardElevation="5dp"
+                        app:contentPadding="20dp">
+                        <ImageView
+                            android:id="@+id/imSeafood"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/seafood"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tSeafood"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SEAFOOD"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:textSize="12dp"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutSesame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardSesame"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@color/button_selector"
+                        app:cardBackgroundColor="#F1F1F1"
+                        app:cardCornerRadius="90dp"
+                        app:cardElevation="5dp"
+                        app:contentPadding="20dp">
+                        <ImageView
+                            android:id="@+id/imSesame"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/sesame"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tSesame"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SESAME"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:textSize="12dp"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutSoy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardSoy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@color/button_selector"
+                        app:cardBackgroundColor="#F1F1F1"
+                        app:cardCornerRadius="90dp"
+                        app:cardElevation="5dp"
+                        app:contentPadding="20dp">
+                        <ImageView
+                            android:id="@+id/imSoy"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/soy"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tSoy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SOY"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:textSize="12dp"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutSulfite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardSulfite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@color/button_selector"
+                        app:cardBackgroundColor="#F1F1F1"
+                        app:cardCornerRadius="90dp"
+                        app:cardElevation="5dp"
+                        app:contentPadding="20dp">
+                        <ImageView
+                            android:id="@+id/imSulfite"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/sulfite"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tSulfite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SULFITE"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:textSize="12dp"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutTreenut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardTreenut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@color/button_selector"
+                        app:cardBackgroundColor="#F1F1F1"
+                        app:cardCornerRadius="90dp"
+                        app:cardElevation="5dp"
+                        app:contentPadding="20dp">
+                        <ImageView
+                            android:id="@+id/imTreenut"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/treenut"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tTreenut"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TREE NUT"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:textSize="12dp"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutWheat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="20dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardWheat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@color/button_selector"
+                        app:cardBackgroundColor="#F1F1F1"
+                        app:cardCornerRadius="90dp"
+                        app:cardElevation="5dp"
+                        app:contentPadding="20dp">
+                        <ImageView
+                            android:id="@+id/imWheat"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/wheat"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tWheat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="WHEAT"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:textSize="12dp"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/btnNextDislike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="200dp"
+            android:backgroundTint="@color/button_selector2"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="Next"
+            android:textSize="12dp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>

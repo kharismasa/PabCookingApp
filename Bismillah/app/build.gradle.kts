@@ -6,6 +6,7 @@ plugins {
     id("kotlin-parcelize")
     id("androidx.navigation.safeargs.kotlin")
     id("com.google.dagger.hilt.android")
+    id("com.google.gms.google-services")
 }
 
 
@@ -108,6 +109,9 @@ dependencies {
 
     // Jsoup
     implementation ("org.jsoup:jsoup:1.14.3")
+
+    implementation("com.google.firebase:firebase-database:20.3.0")
+    implementation("com.google.firebase:firebase-auth-ktx:22.3.0")
 
 }
 

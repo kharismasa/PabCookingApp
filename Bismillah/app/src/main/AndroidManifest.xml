@@ -16,12 +16,28 @@
         android:theme="@style/SplashScreenStyle"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".preferensi.HalamanPreferensiDislike"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".preferensi.HalamanPreferensiAlergi"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".preferensi.HalamanEditPreferensi"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
         android:name=".ui.DetailsActivity"
         android:label="Details"
         android:screenOrientation="portrait"
         android:theme="@style/DetailsActivityStyle" />
         <activity
-            android:name=".ui.MainActivity"
+            android:name=".preferensi.HalamanLogin"
             android:screenOrientation="portrait"
             android:exported="true">
             <intent-filter>

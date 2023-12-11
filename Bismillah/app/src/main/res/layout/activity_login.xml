@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgkecil"
+    tools:context=".preferensi.HalamanLogin">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:srcCompat="@drawable/kotakbiru" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tulisanLogin"
+        app:srcCompat="@drawable/kotakbiru" />
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/open_sans"
+        android:hint="Username"
+        android:inputType="textEmailAddress"
+        android:singleLine="false"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:guidelineUseRtl="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tulisanLogin" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/open_sans"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textAlignment="textStart"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUsername" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:srcCompat="@drawable/tombolgradasi" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="270dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="fLogin"
+        android:text="Login"
+        android:textSize="16sp"
+        app:cornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:id="@+id/gambarJudul"
+        android:layout_width="224dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tulisan" />
+
+    <TextView
+        android:id="@+id/tagLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:letterSpacing="0.2"
+        android:text="Cooking with Passion"
+        android:textColor="#5A4032"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gambarJudul" />
+
+    <TextView
+        android:id="@+id/tulisanLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/open_sans_light"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textColor="#616161"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tagLine" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
