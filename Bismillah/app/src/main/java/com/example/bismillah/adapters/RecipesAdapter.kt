@@ -51,4 +51,19 @@ class RecipesAdapter : RecyclerView.Adapter<RecipesAdapter.MyViewHolder>() {
         recipes = newData.results
         diffUtilResult.dispatchUpdatesTo(this)
     }
+
+//    override fun onBindViewHolder(holder: RecipeViewHolder, position: Int) {
+//        val recipe = getItem(position)
+//        holder.bind(recipe)
+//    }
+//
+//    inner class RecipeViewHolder(private val binding: ListItemRecipesBinding) : RecyclerView.ViewHolder(binding.root) {
+//        fun bind(recipes: Recipes) {
+//            // Bind data ke tampilan
+//            binding.recipes = recipes
+//            binding.executePendingBindings()
+//        }
+//    }
+
+
 }

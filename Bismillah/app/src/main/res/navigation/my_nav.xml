@@ -72,6 +72,9 @@
         <action
             android:id="@+id/action_profileFragment_to_halamanEditPref"
             app:destination="@id/halamanEditPref" />
+        <action
+            android:id="@+id/action_profileFragment_to_halamanAbout"
+            app:destination="@id/halamanAbout" />
     </fragment>
 
     <activity
@@ -79,6 +82,13 @@
         android:name="com.example.bismillah.preferensi.HalamanEditPreferensi"
         android:label="Edit Preferensi"
         tools:layout="@layout/activity_halaman_edit_preferensi">
+    </activity>
+
+    <activity
+        android:id="@+id/halamanAbout"
+        android:name="com.example.bismillah.ui.fragments.profile.AboutActivity"
+        android:label="About CookItUp"
+        tools:layout="@layout/activity_about">
     </activity>
 
 </navigation>

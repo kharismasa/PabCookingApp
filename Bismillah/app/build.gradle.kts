@@ -115,6 +115,11 @@ dependencies {
 
 }
 
+
+//single { RecipesRepository(get()) }
+//
+//factory { RecipesViewModelFactory(get()) }
+
 // Allow references to generated code
 //kapt {
 //    correctErrorTypes = true

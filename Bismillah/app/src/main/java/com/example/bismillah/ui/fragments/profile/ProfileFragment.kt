@@ -9,6 +9,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.example.bismillah.R
 import com.example.bismillah.preferensi.HalamanEditPreferensi
+import com.example.bismillah.preferensi.HalamanLogin
 
 
 class ProfileFragment : Fragment() {
@@ -26,6 +27,8 @@ class ProfileFragment : Fragment() {
 
         // Temukan TextView berdasarkan ID
         val dietaryPreferenceTextView: TextView = view.findViewById(R.id.dietaryp)
+        val aboutTextView: TextView = view.findViewById(R.id.aboutp)
+        val logoutTextView: TextView = view.findViewById(R.id.logoutp)
 
         // Tambahkan listener klik
         dietaryPreferenceTextView.setOnClickListener {
@@ -33,5 +36,18 @@ class ProfileFragment : Fragment() {
             val intent = Intent(activity, HalamanEditPreferensi::class.java)
             startActivity(intent)
         }
+
+        aboutTextView.setOnClickListener {
+            // Intent untuk membuka HalamanAbout
+            val intent = Intent(activity, AboutActivity::class.java)
+            startActivity(intent)
+        }
+
+        logoutTextView.setOnClickListener {
+            // Intent untuk membuka HalamanAbout
+            val intent = Intent(activity, HalamanLogin::class.java)
+            startActivity(intent)
+        }
+
     }
 }

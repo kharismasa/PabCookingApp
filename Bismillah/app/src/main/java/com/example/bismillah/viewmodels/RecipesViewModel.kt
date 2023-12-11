@@ -3,10 +3,16 @@ package com.example.bismillah.viewmodels
 import android.app.Application
 import android.widget.Toast
 import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
 import com.example.bismillah.data.DataStoreRepository
 import com.example.bismillah.data.MealAndDietType
+import com.example.bismillah.models.FoodRecipe
+import com.example.bismillah.ui.fragments.home.RecipesRepository
+import com.example.bismillah.ui.fragments.home.RecipesViewModelFactory
 import com.example.bismillah.util.Constants.Companion.API_KEY
 import com.example.bismillah.util.Constants.Companion.DEFAULT_DIET_TYPE
 import com.example.bismillah.util.Constants.Companion.DEFAULT_MEAL_TYPE
@@ -108,5 +114,25 @@ class RecipesViewModel @Inject constructor(
             }
         }
     }
+
+//    private val _randomRecipes = MutableLiveData<List<FoodRecipe>>()
+//    val randomRecipes: LiveData<List<FoodRecipe>> get() = _randomRecipes
+//    val viewModel = ViewModelProvider(this, RecipesViewModelFactory(RecipesRepository)).get(RecipesViewModel::class.java)
+//
+//
+//    init {
+//        getRandomRecipes()
+//    }
+//
+//    private fun getRandomRecipes() {
+//        viewModelScope.launch {
+//            try {
+//                val recipes = repository.getRandomRecipes()
+//                _randomRecipes.value = recipes
+//            } catch (e: Exception) {
+//                // Handle error, if any
+//            }
+//        }
+//    }
 
 }

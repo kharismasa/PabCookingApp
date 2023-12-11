@@ -116,9 +116,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:text="Dietary Preference"
-                android:textSize="18sp"
-                android:clickable="true"
-                android:onClick="openHalamanEditPreferensi" />
+                android:textSize="18sp" />
 
         </LinearLayout>
 

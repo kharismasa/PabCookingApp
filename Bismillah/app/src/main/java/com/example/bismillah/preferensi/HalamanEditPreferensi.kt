@@ -117,25 +117,6 @@ class HalamanEditPreferensi : AppCompatActivity() {
         }
     }
 
-//    private fun saveDataToFirebase() {
-//        val allergenicIngredients = listOf(
-//            "Dairy", "Egg", "Gluten", "Peanut", "Seafood", "Sesame", "Soy", "Sulfite", "Treenut", "Wheat"
-//            // Tambahkan bahan alergi lainnya sesuai kebutuhan
-//        )
-//
-//        val dislikedIngredients = listOf(
-//            "Alcohol", "Avocado", "Beef", "Fish", "Mayonnaise", "Onion", "Pork", "Potato", "Seafood", "Shrimp"
-//            // Tambahkan bahan dislike lainnya sesuai kebutuhan
-//        )
-//
-//        // Simpan data ke Firebase
-//        saveIngredientsToFirebase("preferensi alergi", allergenicIngredients)
-//        saveIngredientsToFirebase("preferensi dislike", dislikedIngredients)
-//
-//        // Tampilkan Toast "Data Preferensi telah tersimpan" setelah penyimpanan berhasil
-//        Toast.makeText(this, "Data Preferensi telah tersimpan", Toast.LENGTH_SHORT).show()
-//    }
-
     private fun saveDataToFirebase() {
         val allergenicIngredients = listOf(
             "Dairy", "Egg", "Gluten", "Peanut", "Seafood", "Sesame", "Soy", "Sulfite", "Treenut", "Wheat"
@@ -244,12 +225,4 @@ class HalamanEditPreferensi : AppCompatActivity() {
             }
     }
 
-
-//    private fun saveIngredientsToFirebase(key: String, ingredients: List<String>) {
-//        val ingredientsMap = mutableMapOf<String, Boolean>()
-//        for (ingredient in ingredients) {
-//            ingredientsMap[ingredient] = true
-//        }
-//        databaseReference.child(key).setValue(ingredientsMap)
-//    }
 }
