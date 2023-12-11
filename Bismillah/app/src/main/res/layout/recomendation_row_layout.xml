@@ -7,6 +7,9 @@
         <variable
             name="result"
             type="com.example.bismillah.models.Result" />
+        <variable
+            name="onRecipeClickListener"
+            type="android.view.View.OnClickListener" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

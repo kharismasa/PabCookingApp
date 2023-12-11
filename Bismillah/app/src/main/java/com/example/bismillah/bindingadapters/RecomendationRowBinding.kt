@@ -1,16 +1,38 @@
 package com.example.bismillah.bindingadapters
 
+import android.util.Log
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
 import androidx.databinding.BindingAdapter
+import androidx.navigation.findNavController
 import coil.load
+import com.example.bismillah.models.Result
 import com.example.bismillah.R
+import com.example.bismillah.ui.fragments.home.HomeFragmentDirections
+import com.example.bismillah.ui.fragments.recipes.RecipesFragmentDirections
+import java.lang.Exception
 
 class RecomendationRowBinding {
 
     companion object {
+
+        @BindingAdapter("onRecipeClickListener")
+        @JvmStatic
+        fun onRecipeClickListener(recomendationRowLayout: ConstraintLayout, result: Result) {
+            Log.d("onRecipeClickListener", "CALLED")
+            recomendationRowLayout.setOnClickListener {
+                try {
+                    val action =
+                        HomeFragmentDirections.actionHomeFragmentToDetailsActivity(result)
+                    recomendationRowLayout.findNavController().navigate(action)
+                } catch (e: Exception) {
+                    Log.d("onRecipeClickListener", e.toString())
+                }
+            }
+        }
 
         @BindingAdapter("loadImageFromUrl")
         @JvmStatic

@@ -31,6 +31,7 @@ class HomeFragment : Fragment() {
         mainViewModel = ViewModelProvider(requireActivity()).get(MainViewModel::class.java)
         binding.mainViewModel = mainViewModel
 
+
         setupRecyclerView()
         requestApiData()
 
