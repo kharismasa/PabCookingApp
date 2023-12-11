@@ -68,6 +68,17 @@
         android:id="@+id/profileFragment"
         android:name="com.example.bismillah.ui.fragments.profile.ProfileFragment"
         android:label="Profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_halamanEditPref"
+            app:destination="@id/halamanEditPref" />
+    </fragment>
+
+    <activity
+        android:id="@+id/halamanEditPref"
+        android:name="com.example.bismillah.preferensi.HalamanEditPreferensi"
+        android:label="Edit Preferensi"
+        tools:layout="@layout/activity_halaman_edit_preferensi">
+    </activity>
 
 </navigation>
