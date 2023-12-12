@@ -19,17 +19,17 @@ class RecomendationRowBinding {
 
     companion object {
 
-        @BindingAdapter("onRecipeClickListener")
+        @BindingAdapter("onRecClickListener")
         @JvmStatic
-        fun onRecipeClickListener(recomendationRowLayout: ConstraintLayout, result: Result) {
-            Log.d("onRecipeClickListener", "CALLED")
+        fun onRecClickListener(recomendationRowLayout: ConstraintLayout, result: Result) {
+            Log.d("onRecClickListener", "CALLED")
             recomendationRowLayout.setOnClickListener {
                 try {
                     val action =
                         HomeFragmentDirections.actionHomeFragmentToDetailsActivity(result)
                     recomendationRowLayout.findNavController().navigate(action)
                 } catch (e: Exception) {
-                    Log.d("onRecipeClickListener", e.toString())
+                    Log.d("onRecClickListener", e.toString())
                 }
             }
         }
